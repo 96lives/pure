@@ -136,12 +136,12 @@ prompt_pure_preprompt_render() {
 	preprompt+="%B%F{white}%~%f%b "
 	#preprompt+="%B%F{white}%/%f%b "
 	# git info (branch, etc.)
-	preprompt+="%B%F{$git_color}${vcs_info_msg_0_}%f%B "
+	preprompt+="%B%F{$git_color}${vcs_info_msg_0_}%f%b "
 	# other information
-	preprompt+="%F{cyan}${python_info}%f"
-	preprompt+="%F{white}${cuda_info}%f"
+	preprompt+="%B%F{yellow}${python_info}%f%b"
+	preprompt+="%B%F{white}${cuda_info}%f%b"
 	# execution time
-	preprompt+="%F{yellow}${prompt_pure_cmd_exec_time}%f"
+	preprompt+="%F{blue}${prompt_pure_cmd_exec_time}%f"
 
 
 	# construct right-aligned prompts
