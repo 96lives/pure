@@ -129,13 +129,14 @@ prompt_pure_preprompt_render() {
 	#local prompt_pure_username='%B%F{yellow}%n%f%b'
 	#[[ $UID -eq 0 ]] && prompt_pure_username='%F{white}%n%f' # root in white
 	#prompt_pure_username+='%F{242}@'          # dark grey
-	local prompt_pure_username="%B%F{${PROMPT_HOST_COLOR:-blue}}%m%f%b "
+	local prompt_pure_username="%B%F{${PROMPT_HOST_COLOR:-cyan}}%m%f%b "
 	preprompt+=$prompt_pure_username
 
 	# path
-	preprompt+="%B%F{red}%/%f%b "
+	preprompt+="%B%F{white}%~%f%b "
+	#preprompt+="%B%F{white}%/%f%b "
 	# git info (branch, etc.)
-	preprompt+="%F{$git_color}${vcs_info_msg_0_}%f "
+	preprompt+="%B%F{$git_color}${vcs_info_msg_0_}%f%B "
 	# other information
 	preprompt+="%F{cyan}${python_info}%f"
 	preprompt+="%F{white}${cuda_info}%f"
