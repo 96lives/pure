@@ -23,3 +23,5 @@ The difference to the original theme includes:
 Original Code: MIT © [Sindre Sorhus](http://sindresorhus.com)
 
 Further work: MIT © [Jongwook Choi](https://github.com/wookayin)
+
+Fur~~~ther work: MIT © [Dongsu Zhang](https://github.com/96lives)
