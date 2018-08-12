@@ -454,8 +454,8 @@ prompt_pure_setup() {
 
 	# prompt with vi-keybindings -- https://github.com/sindresorhus/pure/wiki
 	#zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{red}❯%F{yellow}❯%(?.%F{green}.%F{red})❯%f%b'
-	zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{red}❯%f%b'
-	zstyle ':prezto:module:editor:info:keymap:alternate' format '%B%F{red}❮%f%b'
+	zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{white}❯%f%b'
+	zstyle ':prezto:module:editor:info:keymap:alternate' format '%B%F{white}❮%f%b'
 
 	# prompt turns red if the previous command didn't exit with 0
 	PROMPT='%B%(?.%F{green}.%F{red})${editor_info[keymap]}%f%b '
